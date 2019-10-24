@@ -1,0 +1,61 @@
+body {
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url('KPI.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+}
+.nav-area{
+    font-family: Arial;
+}
+.nav-area ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-area ul li{
+    width: 20%;
+}
+.nav-area ul li > ul{
+    display: none;
+    flex-direction: column;
+}
+.nav-area ul li > ul li{
+    width: 100%;
+}
+.nav-area ul li:hover > ul{
+    display: flex;
+}
+.nav-area a{
+    text-transform: uppercase;
+    display: block;
+    background: rgba(0, 123, 255);
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+.nav-area a:hover{
+    background: white;
+    color: cornflowerblue;
+}
+.nav-area .dropdown li > a{
+    background: cornflowerblue;
+    color: #fff;
+}
+.nav-area .dropdown li > a:hover{
+    background: cornflowerblue;
+    color: white;
+}
+.nav-area .dropdown > a:after{
+    content: '+';
+    padding-left: 5px;
+}
+@media (max-width: 600px) {
+    .nav-area ul li{
+        width: 100%;
+    }
+}
